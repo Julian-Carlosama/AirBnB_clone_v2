@@ -20,7 +20,7 @@ def hbnb():
 def c_fun(text):
     """ Function called with /c/<text> route """
     tx = text.replace("_", " ")
-    return (f"C {tx}")
+    return ("C {}".format(tx))
     """return f"C {txt}"."""
 
 
@@ -30,7 +30,7 @@ def python_cool(text="is cool"):
     """ Function called with /python/<text> route """
     if text is not "is cool":
         text = text.replace("_", " ")
-    return (f"python {text}")
+    return ("python {}".format(text))
 
 
 if __name__ == '__main__':
