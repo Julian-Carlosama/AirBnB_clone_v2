@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """ Script that starts a Flask web application """
-import re
 from flask import Flask, render_template
-from urllib3 import Retry
 app = Flask(__name__)
 
 
