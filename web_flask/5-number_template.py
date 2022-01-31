@@ -20,7 +20,7 @@ def hbnb():
 def c_fun(text):
     """ Function called with /c/<text> route """
     tx = text.replace("_", " ")
-    return (f"C {tx}")
+    return ("C {}".format(tx))
     """return f"C {txt}"."""
 
 
@@ -30,12 +30,12 @@ def python_cool(text="is cool"):
     """ Function called with /python/<text> route """
     if text is not "is cool":
         text = text.replace("_", " ")
-    return (f"python {text}")
+    return ("Python {}".format(text))
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
-    return (f"{n} is a number")
+    return ("{} is a number".format(n))
 
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
