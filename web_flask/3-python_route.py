@@ -30,7 +30,7 @@ def python_cool(text="is cool"):
     """ Function called with /python/<text> route """
     if text is not "is cool":
         text = text.replace("_", " ")
-    return ("python {}".format(text))
+    return ("Python {}".format(text))
 
 
 if __name__ == '__main__':
