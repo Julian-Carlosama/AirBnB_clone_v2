@@ -20,7 +20,7 @@ def hbnb():
 def c_fun(text):
     """ Function called with /c/<text> route """
     tx = text.replace("_", " ")
-    return (f"C {tx}")
+    return ("C {}".format(tx))
     """return f"C {txt}"."""
 
 
